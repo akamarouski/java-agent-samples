@@ -61,7 +61,7 @@ public abstract class ZebrunnerTestNGCucumberTests {
         this.testNGCucumberRunner.runScenario(pickleWrapper.getPickle());
     }
 
-    @DataProvider
+    @DataProvider(parallel = true)
     public Object[][] scenarios(ITestContext context) {
         Object[][] parameters = this.testNGCucumberRunner.provideScenarios();
         Object[][] newParams = new Object[parameters.length][1];
