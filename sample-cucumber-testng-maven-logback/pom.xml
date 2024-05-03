@@ -22,6 +22,20 @@
         <suite>hello</suite>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>zebrunner_snapshots</id>
+            <name>zebrunner Snapshots</name>
+            <url>https://public-nexus.zebrunner.com/repository/ce-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -68,7 +82,7 @@
         <dependency>
             <groupId>com.zebrunner</groupId>
             <artifactId>agent-testng</artifactId>
-            <version>${zebrunner-agent.version}</version>
+            <version>1.9.9.426-SNAPSHOT</version>
         </dependency>
 
 
